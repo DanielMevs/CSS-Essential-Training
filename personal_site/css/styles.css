@@ -81,6 +81,9 @@ footer a:hover {
   letter-spacing: 0.1em;
   line-height: 1;
   border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .content-wrapper {
@@ -181,6 +184,14 @@ footer a:hover {
     padding: 5px;
     width: 42px;
     height: 24px;
+    margin-bottom: 0.625rem;
+  }
+  /* .project-item p {
+    margin-bottom: 10px;
+  } */
+  .project-item {
+    display: flex;
+    flex-direction: column;
   }
 }
 
