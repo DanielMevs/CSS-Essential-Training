@@ -106,6 +106,34 @@ footer a:hover {
   background: rgb(255 255 255 / 0.9);
   padding: 30px;
 }
+@media screen and (max-width: 650px) {
+  .home .content-wrapper {
+    padding: 10px;
+  }
+  .content-bg {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 635px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2.title {
+    font-size: 1.9rem;
+  }
+  .home {
+    background: #d3d4d6;
+  }
+}
+@media screen and (max-width: 369px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2.title {
+    font-size: 1.8rem;
+  }
+}
 
 /* RESUME
 ------------------------------- */
@@ -129,20 +157,67 @@ footer a:hover {
   left: 5px;
   font-size: 1.5rem;
 }
+@media screen and (max-width: 1200px) {
+  .download-link {
+    position: absolute;
+  }
+}
 
-/* Profile
+@media screen and (max-width: 500px) {
+  .resume header::before {
+    height: 200px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  .resume {
+    background: #d3d4d6;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 859px) {
+  .btn.btn--project-item {
+    padding: 5px;
+    width: 42px;
+    height: 24px;
+  }
+}
+
+/* Projects
 ------------------------------- */
 .project-item {
-  display: flow-root;
   margin: 30px 0;
 }
 .project-item img {
   width: 300px;
-  float: left;
-  margin-right: 20px;
 }
-/* Projects
-------------------------------- */
+
+@media screen and (min-width: 860px) {
+  .project-item {
+    display: flow-root;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 859px) {
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: to center align items */
+  }
+  .project-item img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .project-item img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 
 /* Work Experience
 ------------------------------- */
@@ -161,6 +236,17 @@ footer a:hover {
   margin-top: 0;
 }
 
+@media screen and (min-width: 860px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+  }
+  .work-summary p:first-child {
+    margin-top: 0;
+  }
+}
+
 /* Education
 ------------------------------- */
 .education-item {
@@ -176,9 +262,6 @@ footer a:hover {
 footer {
   background: #222;
   color: #d3d4d6;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
 }
 
 .socials {
@@ -194,4 +277,19 @@ footer {
 }
 .socials img:hover {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 860px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
 }
